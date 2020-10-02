@@ -165,15 +165,15 @@
                   </children>
                   <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_55kW0QS6EeuHqbI5Dtq72w" points="[4, 25, 8, -82]$[36, 98, 40, -9]"/>
                 </edges>
-                <edges xmi:type="umlnotation:UMLConnector" xmi:id="_8e2-EAS6EeuHqbI5Dtq72w" element="_8e0h0AS6EeuHqbI5Dtq72w" source="_3xpoEAS6EeuHqbI5Dtq72w" target="_7gAJIAS6EeuHqbI5Dtq72w" fontName="Segoe UI" fontHeight="8" roundedBendpointsRadius="4" lineColor="8421504" lineWidth="1" showStereotype="Text">
+                <edges xmi:type="umlnotation:UMLConnector" xmi:id="_8e2-EAS6EeuHqbI5Dtq72w" element="_8e0h0AS6EeuHqbI5Dtq72w" source="_3xpoEAS6EeuHqbI5Dtq72w" target="_252dYAS6EeuHqbI5Dtq72w" fontName="Segoe UI" fontHeight="8" roundedBendpointsRadius="4" lineColor="8421504" lineWidth="1" showStereotype="Text">
                   <children xmi:type="notation:DecorationNode" xmi:id="_8e3lIAS6EeuHqbI5Dtq72w" type="TransitionLabelCompartment">
                     <children xmi:type="notation:BasicDecorationNode" xmi:id="_8e3lIgS6EeuHqbI5Dtq72w" type="Stereotype"/>
                     <children xmi:type="notation:BasicDecorationNode" xmi:id="_8e3lIwS6EeuHqbI5Dtq72w" type="TransitionLabel"/>
                     <children xmi:type="notation:ListCompartment" xmi:id="_8e3lJAS6EeuHqbI5Dtq72w" type="Triggers"/>
                     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8e3lIQS6EeuHqbI5Dtq72w" y="-149"/>
                   </children>
-                  <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8e2-EQS6EeuHqbI5Dtq72w" points="[3, 25, -7, -64]$[11, 80, 1, -9]"/>
-                  <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_8e72kAS6EeuHqbI5Dtq72w" id="(0.7377436503248671,0.18052930056710775)"/>
+                  <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8e2-EQS6EeuHqbI5Dtq72w" points="[-679, -512, -23, 1435]$[-1968, -1482, -1312, 465]$[-748, -1915, -92, 32]"/>
+                  <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_8e72kAS6EeuHqbI5Dtq72w" id="(0.06261075014766686,0.8005671077504726)"/>
                 </edges>
                 <edges xmi:type="umlnotation:UMLConnector" xmi:id="_9iT_IAS6EeuHqbI5Dtq72w" element="_9iRi4AS6EeuHqbI5Dtq72w" source="_7gAJIAS6EeuHqbI5Dtq72w" target="_252dYAS6EeuHqbI5Dtq72w" fontName="Segoe UI" fontHeight="8" roundedBendpointsRadius="4" lineColor="8421504" lineWidth="1" showStereotype="Text">
                   <children xmi:type="notation:DecorationNode" xmi:id="_9iT_IgS6EeuHqbI5Dtq72w" type="TransitionLabelCompartment">
@@ -202,7 +202,7 @@
                   <event xmi:type="uml:CallEvent" href="platform:/plugin/com.ibm.xtools.umldt.rt.cpp.core/libraries/RTClasses.emx#_18o5ErIlEduJc5NEaBCMOw?RTClasses/Timing/timeout?"/>
                 </trigger>
               </transition>
-              <transition xmi:id="_8e0h0AS6EeuHqbI5Dtq72w" name="yellow_to_green" source="_3xny4AS6EeuHqbI5Dtq72w" target="_7f9s4AS6EeuHqbI5Dtq72w">
+              <transition xmi:id="_8e0h0AS6EeuHqbI5Dtq72w" name="yellow_to_green" source="_3xny4AS6EeuHqbI5Dtq72w" target="_250BIAS6EeuHqbI5Dtq72w">
                 <trigger xmi:id="_L8KZkAS7EeuHqbI5Dtq72w" name="" port="_FcJCIAS7EeuHqbI5Dtq72w">
                   <event xmi:type="uml:CallEvent" href="platform:/plugin/com.ibm.xtools.umldt.rt.cpp.core/libraries/RTClasses.emx#_18o5ErIlEduJc5NEaBCMOw?RTClasses/Timing/timeout?"/>
                 </trigger>
