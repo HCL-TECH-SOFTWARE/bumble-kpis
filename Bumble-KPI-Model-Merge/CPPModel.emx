@@ -165,50 +165,35 @@
                   </children>
                   <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_55kW0QS6EeuHqbI5Dtq72w" points="[4, 25, 8, -82]$[36, 98, 40, -9]"/>
                 </edges>
-                <edges xmi:type="umlnotation:UMLConnector" xmi:id="_8e2-EAS6EeuHqbI5Dtq72w" element="_8e0h0AS6EeuHqbI5Dtq72w" source="_3xpoEAS6EeuHqbI5Dtq72w" target="_7gAJIAS6EeuHqbI5Dtq72w" fontName="Segoe UI" fontHeight="8" roundedBendpointsRadius="4" lineColor="8421504" lineWidth="1" showStereotype="Text">
+                <edges xmi:type="umlnotation:UMLConnector" xmi:id="_8e2-EAS6EeuHqbI5Dtq72w" element="_8e0h0AS6EeuHqbI5Dtq72w" source="_3xpoEAS6EeuHqbI5Dtq72w" target="_3xpoEAS6EeuHqbI5Dtq72w" fontName="Segoe UI" fontHeight="8" roundedBendpointsRadius="4" lineColor="8421504" lineWidth="1" showStereotype="Text">
                   <children xmi:type="notation:DecorationNode" xmi:id="_8e3lIAS6EeuHqbI5Dtq72w" type="TransitionLabelCompartment">
                     <children xmi:type="notation:BasicDecorationNode" xmi:id="_8e3lIgS6EeuHqbI5Dtq72w" type="Stereotype"/>
                     <children xmi:type="notation:BasicDecorationNode" xmi:id="_8e3lIwS6EeuHqbI5Dtq72w" type="TransitionLabel"/>
                     <children xmi:type="notation:ListCompartment" xmi:id="_8e3lJAS6EeuHqbI5Dtq72w" type="Triggers"/>
                     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8e3lIQS6EeuHqbI5Dtq72w" y="-149"/>
                   </children>
-                  <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8e2-EQS6EeuHqbI5Dtq72w" points="[3, 25, -7, -64]$[11, 80, 1, -9]"/>
-                  <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_8e72kAS6EeuHqbI5Dtq72w" id="(0.7377436503248671,0.18052930056710775)"/>
-                </edges>
-                <edges xmi:type="umlnotation:UMLConnector" xmi:id="_9iT_IAS6EeuHqbI5Dtq72w" element="_9iRi4AS6EeuHqbI5Dtq72w" source="_7gAJIAS6EeuHqbI5Dtq72w" target="_252dYAS6EeuHqbI5Dtq72w" fontName="Segoe UI" fontHeight="8" roundedBendpointsRadius="4" lineColor="8421504" lineWidth="1" showStereotype="Text">
-                  <children xmi:type="notation:DecorationNode" xmi:id="_9iT_IgS6EeuHqbI5Dtq72w" type="TransitionLabelCompartment">
-                    <children xmi:type="notation:BasicDecorationNode" xmi:id="_9iT_JAS6EeuHqbI5Dtq72w" type="Stereotype"/>
-                    <children xmi:type="notation:BasicDecorationNode" xmi:id="_9iT_JQS6EeuHqbI5Dtq72w" type="TransitionLabel"/>
-                    <children xmi:type="notation:ListCompartment" xmi:id="_9iUmMAS6EeuHqbI5Dtq72w" type="Triggers"/>
-                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9iT_IwS6EeuHqbI5Dtq72w" y="-149"/>
-                  </children>
-                  <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9iT_IQS6EeuHqbI5Dtq72w" points="[725, -488, -271, 3745]$[3620, -2434, 2624, 1799]$[1109, -4156, 113, 77]"/>
-                  <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_9iY3oAS6EeuHqbI5Dtq72w" id="(0.9255759007678677,0.7400756143667296)"/>
+                  <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8e2-EQS6EeuHqbI5Dtq72w" points="[-14, 1, -14, 1]$[-14, 1, -14, 1]"/>
+                  <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_8e72kAS6EeuHqbI5Dtq72w" id="(0.1689497716894977,0.5396975425330813)"/>
                 </edges>
               </contents>
             </eAnnotations>
             <connectionPoint xmi:id="_zczuwAS6EeuHqbI5Dtq72w" kind="entryPoint"/>
             <entry xmi:type="uml:OpaqueBehavior" xmi:id="_IginQAS7EeuHqbI5Dtq72w" name="Entry">
               <language>C++</language>
-              <body>timing.informEvery(RTTimespec(2,0));</body>
+              <body>timing.informEvery(RTTimespec(1,0)); // Reduced timeout</body>
             </entry>
             <region xmi:id="_zczHsAS6EeuHqbI5Dtq72w" name="Region1">
-              <subvertex xmi:type="uml:State" xmi:id="_250BIAS6EeuHqbI5Dtq72w" name="Red"/>
-              <subvertex xmi:type="uml:State" xmi:id="_3xny4AS6EeuHqbI5Dtq72w" name="Yellow"/>
-              <subvertex xmi:type="uml:State" xmi:id="_7f9s4AS6EeuHqbI5Dtq72w" name="Green"/>
+              <subvertex xmi:type="uml:State" xmi:id="_250BIAS6EeuHqbI5Dtq72w" name="Red2"/>
+              <subvertex xmi:type="uml:State" xmi:id="_3xny4AS6EeuHqbI5Dtq72w" name="Yellow2"/>
+              <subvertex xmi:type="uml:State" xmi:id="_7f9s4AS6EeuHqbI5Dtq72w" name="Green2"/>
               <transition xmi:id="_5LYbIAS6EeuHqbI5Dtq72w" name="Initial" kind="local" source="_zczuwAS6EeuHqbI5Dtq72w" target="_250BIAS6EeuHqbI5Dtq72w"/>
               <transition xmi:id="_55hTgAS6EeuHqbI5Dtq72w" name="red_to_yellow" source="_250BIAS6EeuHqbI5Dtq72w" target="_3xny4AS6EeuHqbI5Dtq72w">
                 <trigger xmi:id="_Kp0A4AS7EeuHqbI5Dtq72w" name="" port="_FcJCIAS7EeuHqbI5Dtq72w">
                   <event xmi:type="uml:CallEvent" href="platform:/plugin/com.ibm.xtools.umldt.rt.cpp.core/libraries/RTClasses.emx#_18o5ErIlEduJc5NEaBCMOw?RTClasses/Timing/timeout?"/>
                 </trigger>
               </transition>
-              <transition xmi:id="_8e0h0AS6EeuHqbI5Dtq72w" name="yellow_to_green" source="_3xny4AS6EeuHqbI5Dtq72w" target="_7f9s4AS6EeuHqbI5Dtq72w">
+              <transition xmi:id="_8e0h0AS6EeuHqbI5Dtq72w" name="yellow_to_green" source="_3xny4AS6EeuHqbI5Dtq72w" target="_3xny4AS6EeuHqbI5Dtq72w">
                 <trigger xmi:id="_L8KZkAS7EeuHqbI5Dtq72w" name="" port="_FcJCIAS7EeuHqbI5Dtq72w">
-                  <event xmi:type="uml:CallEvent" href="platform:/plugin/com.ibm.xtools.umldt.rt.cpp.core/libraries/RTClasses.emx#_18o5ErIlEduJc5NEaBCMOw?RTClasses/Timing/timeout?"/>
-                </trigger>
-              </transition>
-              <transition xmi:id="_9iRi4AS6EeuHqbI5Dtq72w" name="green_to_red" source="_7f9s4AS6EeuHqbI5Dtq72w" target="_250BIAS6EeuHqbI5Dtq72w">
-                <trigger xmi:id="_Nh8roAS7EeuHqbI5Dtq72w" name="" port="_FcJCIAS7EeuHqbI5Dtq72w">
                   <event xmi:type="uml:CallEvent" href="platform:/plugin/com.ibm.xtools.umldt.rt.cpp.core/libraries/RTClasses.emx#_18o5ErIlEduJc5NEaBCMOw?RTClasses/Timing/timeout?"/>
                 </trigger>
               </transition>
