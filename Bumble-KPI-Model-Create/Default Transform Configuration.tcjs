@@ -1,0 +1,9 @@
+/*
+ *   Converted from: platform:/resource/Bumble-KPI-Model-Create/Default%20Transform%20Configuration.tc
+ */
+
+let tc = TCF.define(TCF.CPP_TRANSFORM);
+tc.sources = [
+    'platform:/resource/Bumble-KPI-Model-Create/CPPModel.emx#_1AdIQAS5EeuHqbI5Dtq72w'
+];
+tc.createTargetProject = true;
