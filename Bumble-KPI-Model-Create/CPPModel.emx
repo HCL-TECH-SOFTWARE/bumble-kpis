@@ -74,7 +74,7 @@
                     </children>
                     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_z2TM0QS6EeuHqbI5Dtq72w" x="1107" y="-85"/>
                   </children>
-                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wTRyAQS6EeuHqbI5Dtq72w" x="3244" y="1184"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wTRyAQS6EeuHqbI5Dtq72w" x="3561" y="1184"/>
                 </children>
               </children>
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_u0KvswS6EeuHqbI5Dtq72w" type="Name"/>
@@ -190,12 +190,12 @@
             <connectionPoint xmi:id="_zczuwAS6EeuHqbI5Dtq72w" kind="entryPoint"/>
             <entry xmi:type="uml:OpaqueBehavior" xmi:id="_IginQAS7EeuHqbI5Dtq72w" name="Entry">
               <language>C++</language>
-              <body>timing.informEvery(RTTimespec(2,0));</body>
+              <body>timing.informEvery(RTTimespec(5,0)); // increased timeout</body>
             </entry>
             <region xmi:id="_zczHsAS6EeuHqbI5Dtq72w" name="Region1">
-              <subvertex xmi:type="uml:State" xmi:id="_250BIAS6EeuHqbI5Dtq72w" name="Red"/>
-              <subvertex xmi:type="uml:State" xmi:id="_3xny4AS6EeuHqbI5Dtq72w" name="Yellow"/>
-              <subvertex xmi:type="uml:State" xmi:id="_7f9s4AS6EeuHqbI5Dtq72w" name="Green"/>
+              <subvertex xmi:type="uml:State" xmi:id="_250BIAS6EeuHqbI5Dtq72w" name="RedLight"/>
+              <subvertex xmi:type="uml:State" xmi:id="_3xny4AS6EeuHqbI5Dtq72w" name="YellowLight"/>
+              <subvertex xmi:type="uml:State" xmi:id="_7f9s4AS6EeuHqbI5Dtq72w" name="GreenLight"/>
               <transition xmi:id="_5LYbIAS6EeuHqbI5Dtq72w" name="Initial" kind="local" source="_zczuwAS6EeuHqbI5Dtq72w" target="_250BIAS6EeuHqbI5Dtq72w"/>
               <transition xmi:id="_55hTgAS6EeuHqbI5Dtq72w" name="red_to_yellow" source="_250BIAS6EeuHqbI5Dtq72w" target="_3xny4AS6EeuHqbI5Dtq72w">
                 <trigger xmi:id="_Kp0A4AS7EeuHqbI5Dtq72w" name="" port="_FcJCIAS7EeuHqbI5Dtq72w">
@@ -207,7 +207,7 @@
                   <event xmi:type="uml:CallEvent" href="platform:/plugin/com.ibm.xtools.umldt.rt.cpp.core/libraries/RTClasses.emx#_18o5ErIlEduJc5NEaBCMOw?RTClasses/Timing/timeout?"/>
                 </trigger>
               </transition>
-              <transition xmi:id="_9iRi4AS6EeuHqbI5Dtq72w" name="green_to_red" source="_7f9s4AS6EeuHqbI5Dtq72w" target="_250BIAS6EeuHqbI5Dtq72w">
+              <transition xmi:id="_9iRi4AS6EeuHqbI5Dtq72w" name="back_to_start" source="_7f9s4AS6EeuHqbI5Dtq72w" target="_250BIAS6EeuHqbI5Dtq72w">
                 <trigger xmi:id="_Nh8roAS7EeuHqbI5Dtq72w" name="" port="_FcJCIAS7EeuHqbI5Dtq72w">
                   <event xmi:type="uml:CallEvent" href="platform:/plugin/com.ibm.xtools.umldt.rt.cpp.core/libraries/RTClasses.emx#_18o5ErIlEduJc5NEaBCMOw?RTClasses/Timing/timeout?"/>
                 </trigger>
